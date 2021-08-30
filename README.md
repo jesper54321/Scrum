@@ -1,10 +1,10 @@
 # Musik side
 
-hero i header - jeppe
+Hero i header - Jeppe
 
-kontaktformular - jesper
+Kontaktformular - Jesper
 
-om os - jeppe
+Om os - Jeppe
 
-galleri - natascha
+Galleri - Natascha
 
