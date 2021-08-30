@@ -1,12 +1,12 @@
 # Scrum
 
-Musik side
+# Musik side
 
-hero i header
+hero i header - jeppe
 
-kontaktformular
+kontaktformular - jesper
 
-om os
+om os - jeppe
 
-galleri
+galleri - natascha
 
