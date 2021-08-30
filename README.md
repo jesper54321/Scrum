@@ -1,5 +1,3 @@
-# Scrum
-
 # Musik side
 
 hero i header - jeppe
