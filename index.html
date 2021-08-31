@@ -11,7 +11,7 @@
   <body>
     <h2 id="contactForm">Message Us</h2>
     <div class="flex">
-      <address>
+      <address id="address">
         <div id="profile">
           <img src="img/unnamed.png" alt="" />
           <div>
@@ -35,16 +35,30 @@
           </a>
         </div>
       </address>
-      <form action="" method="get">
-        <input type="text" name="name" id="name" placeholder="Name..." />
+      <form id="contactForm2" action="" method="get">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name..."
+          required
+        />
         <input
           type="text"
           name="last-name"
           id="last-name"
           placeholder="Last name..."
+          required
         />
-        <input type="email" name="email" id="email" placeholder="Email..." />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email..."
+          required
+        />
         <textarea
+          required
           name="formMessage"
           id="formMessage"
           placeholder="Input your message here!"
