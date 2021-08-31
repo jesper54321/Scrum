@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 main{
@@ -17,24 +18,22 @@ main{
     opacity: 0.6;
     color: black;
     font-size: 100px;
-
+    animation: fade-in_2 2s ease ;
 }
 
 #music2{
     opacity: 0.6;
     color: orange;
     font-size: 100px;
-   
+    animation: fade-in_2 2s ease ;
 }
 
 #music3{
     opacity: 0.6;
     color: red;
     font-size: 100px;
- 
+    animation: fade-in_2 2s ease ;
 }
-
-
 
 #music1:hover{
     opacity: 1;
@@ -54,16 +53,32 @@ main{
     font-size: 100px;
 }
 
+.txt2{
+    animation: fade-in_2 2s ease ;
+}
+
+
+@keyframes fade-in_2{
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      100% {
+        opacity: 0.6;
+        transform: translateX(0);
+      }
+}
+
 
 
 
 #icons{
     padding-top: 110px;
-    font-size: 140px;
+    font-size: 150px;
     padding-bottom: 10px;
     text-align: center;
-    animation: spin 5s ease;
     animation: fade-in 2s ease ;
+    filter: drop-shadow(8px 2px 1px rgba(92, 75, 75, 0.507));
 }
 
 @keyframes fade-in {
@@ -77,6 +92,7 @@ main{
     }
 }
 
+
 #txt{
     padding-top: 100px;
     max-width: 800px;
@@ -88,6 +104,10 @@ main{
 
 h2{
     font-size: 35px;
+}
+
+#OM-MIG-H2{
+    font-size: 25px;
 }
 
 
@@ -110,3 +130,9 @@ i{
 #links p{
     font-size: 20px;
 }
+
+
+
+
+
+
