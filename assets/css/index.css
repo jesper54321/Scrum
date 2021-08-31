@@ -11,3 +11,28 @@ body{
 #gallery img{
     width: 100%;
 }
+
+#image1:hover, 
+#image2:hover, 
+#image3:hover,
+#image4:hover,
+#image5:hover,
+#image6:hover,
+#image7:hover,
+#image8:hover,
+#image9:hover,
+#image10:hover,
+#image11:hover,
+#image12:hover{
+    animation: row1 2s ease-out;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+@keyframes row1{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+}
