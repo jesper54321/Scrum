@@ -1,1 +1,42 @@
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(/Assets/IMG/DEXTER.jpg);
+    height: 100vh;
+    max-width: 1920px;
+
+    h1{
+        font-size:90px;
+        padding-bottom: 60px;
+        text-align: center;
+        padding-top: 300px;
+        color: white;
+    }
+    
+    #BTN{
+        padding-left: 750px;
+        display: flex;
+
+        #header-btn{
+            background-color: blue;
+            border: 1px solid black;
+            color: black;
+            padding: 20px 10px;
+            border-radius: 4%;
+            text-decoration:none;
+            display: block;
+        }
+        #header-btn:hover{
+            background-color: black;
+            border: 1px solid blue;
+            color: blue;
+            border-radius: 15%;
+        }
+    }
+}
+
+
