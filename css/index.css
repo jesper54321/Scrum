@@ -4,57 +4,109 @@
     box-sizing: border-box;
 }
 
-header{
-    background-image: url(/Assets/IMG/DEXTER.jpg);
-    height: 100vh;
-    max-width: 1920px;
+main{
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
-h1{
-    font-size:90px;
-    padding-bottom: 60px;
-    text-align: center;
-    padding-top: 300px;
-    color: white;
-}
 
-#header-btn{
-    background-color: blue;
-    border: 1px solid black;
-    color: black;
-    padding: 20px 10px;
-    border-radius: 4%;
-    text-decoration:none;
-    display: block;
-}
 
-#header-btn:hover{
-    background-color: black;
-    border: 1px solid blue;
-    color: blue;
-    border-radius: 15%;
-}
-
-#BTN{
-    padding-left: 750px;
-    display: flex;
-}
 
 
 #music1{
+    opacity: 0.6;
+    color: black;
+    font-size: 100px;
+
+}
+
+#music2{
+    opacity: 0.6;
+    color: orange;
+    font-size: 100px;
+   
+}
+
+#music3{
+    opacity: 0.6;
+    color: red;
+    font-size: 100px;
+ 
+}
+
+
+
+#music1:hover{
+    opacity: 1;
     color: black;
     font-size: 100px;
 }
 
-#music2{
+#music2:hover{
+    opacity: 1;
     color: orange;
     font-size: 100px;
 }
 
-#music3{
+#music3:hover{
+    opacity: 1;
     color: red;
     font-size: 100px;
 }
 
 
 
+
+#icons{
+    padding-top: 110px;
+    font-size: 140px;
+    padding-bottom: 10px;
+    text-align: center;
+    animation: spin 5s ease;
+    animation: fade-in 2s ease ;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+#txt{
+    padding-top: 100px;
+    max-width: 800px;
+}
+
+.OM-MIG-P{
+    font-size: 18px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+
+
+
+
+#flex-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Links{
+    max-width: 40px;
+}
+
+i{
+    padding-bottom: 40px;
+}
+
+#links p{
+    font-size: 20px;
+}
