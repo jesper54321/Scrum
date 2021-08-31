@@ -10,14 +10,18 @@ body{
     margin: 0;
     text-align: center;
 }
-#galleryText h4{
+#galleryText p{
     font-size: 1.5em;
     margin: 10px;
     text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 /* GALLERY */
 #gallery{
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 7px;
@@ -39,7 +43,7 @@ body{
 #image10:hover,
 #image11:hover,
 #image12:hover{
-    animation: images 2s ease-out;
+    animation: images 2s ease;
     opacity: 0.9;
     transition: 0.3s;
 }
