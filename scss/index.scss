@@ -62,6 +62,9 @@ h2 {
   flex-direction: column;
   gap: 20px;
   padding: 40px;
+  a:hover {
+    filter: contrast(50%);
+  }
   #profile {
     display: flex;
     flex-wrap: wrap;
