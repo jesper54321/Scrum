@@ -58,10 +58,39 @@ form {
 }
 
 address {
-  padding: 40px 40px;
-  :nth-child(1),
-  :nth-child(2),
-  :nth-child(3) {
-    display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  #profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & > * {
+      flex: 1;
+      min-width: 45%;
+    }
+    div {
+      display: flex;
+      text-align: right;
+      flex-direction: column;
+      & > * {
+        color: blue;
+        display: block;
+      }
+    }
+  }
+}
+
+#soMe {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  * {
+    flex: 1;
+    height: 30px;
+    gap: 15px;
   }
 }
