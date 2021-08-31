@@ -34,5 +34,6 @@ body{
     }
     50%{
         transform: scale(1.02);
+        border-radius: 5%;
     }
 }
