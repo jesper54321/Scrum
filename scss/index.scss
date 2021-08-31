@@ -16,11 +16,52 @@ a {
   font: inherit;
 }
 
+h2 {
+  text-align: center;
+}
+
 .flex {
+  padding: 10px 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+  gap: 20px;
   & > * {
     flex: 1;
+    border: 1px solid black;
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 40px;
+
+  & > * {
+    padding: 5px 15px;
+  }
+  :nth-child(1),
+  :nth-child(2) {
+    flex: 1;
+  }
+  :nth-child(3),
+  :nth-child(4) {
+    width: 100%;
+  }
+  :nth-child(5) {
+    padding: 10px 30px;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+address {
+  padding: 40px 40px;
+  :nth-child(1),
+  :nth-child(2),
+  :nth-child(3) {
+    display: block;
   }
 }
