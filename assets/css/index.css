@@ -3,9 +3,16 @@ body{
     margin: auto;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+/* TEXT */
 #galleryText h2{
     font-size: 4em;
     margin: 0;
+    text-align: center;
+}
+#galleryText h4{
+    font-size: 1.5em;
+    margin: 10px;
     text-align: center;
 }
 
@@ -20,7 +27,7 @@ body{
     width: 100%;
 }
 
-#image1:hover, 
+#image1:hover,
 #image2:hover, 
 #image3:hover,
 #image4:hover,
