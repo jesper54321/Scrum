@@ -31,7 +31,7 @@ body{
     width: 100%;
 }
 
-#image1:hover,
+/* #image1:hover,
 #image2:hover, 
 #image3:hover,
 #image4:hover,
@@ -55,4 +55,16 @@ body{
         transform: scale(1.02);
         border-radius: 5%;
     }
+} */
+
+/* No keyframes, use transition scale, border-radius */
+
+#gallery img{
+    transition: all 0.3s ease-in-out;
+    opacity: 100%;
+}
+#gallery img:hover{
+    transform: scale(1.02);
+    border-radius: 5%;
+    opacity: 80%;
 }
