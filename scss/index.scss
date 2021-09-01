@@ -77,9 +77,11 @@ a {
   input[type='email'],
   textarea {
     padding-left: 15px;
+    transition: all 400ms ease-in-out;
     &:hover,
     &:focus {
       background-color: #eee;
+      border-radius: 1vw;
     }
   }
 
