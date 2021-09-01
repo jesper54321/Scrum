@@ -33,6 +33,10 @@ a {
           flex-direction: row-reverse;
   width: 100%;
   border: 1px solid black;
+  border-radius: 8vw;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 15px 5px #777;
+  box-shadow: 5px 5px 15px 5px #777;
 }
 .flex > * {
   -webkit-box-flex: 1;
@@ -106,9 +110,9 @@ a {
   border-radius: 25%;
   text-decoration: none;
   display: block;
-  -webkit-transition: 1s;
-  transition: 1s;
-  border-radius: 10%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-radius: 1vw;
   font-size: 25px;
   font-weight: 600;
   margin: 0 auto;
@@ -118,9 +122,10 @@ a {
   background-color: #666;
   border: 3px solid #666;
   color: #ccc;
-  border-radius: 20%;
+  border-radius: 2vw;
   -webkit-box-shadow: 5px 10px 15px #777;
   box-shadow: 5px 10px 15px #777;
+  cursor: pointer;
 }
 
 #address {
@@ -162,7 +167,7 @@ a {
 }
 #address #profile > img {
   max-width: 50%;
-  border-radius: 35%;
+  border-radius: 3.5vw;
 }
 #address #profile > * {
   -webkit-box-flex: 1;
