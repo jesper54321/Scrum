@@ -16,16 +16,18 @@ a {
   font: inherit;
 }
 
-h2 {
+#contactForm {
   text-align: center;
+  margin: 20px auto;
 }
 
 .flex {
-  padding: 10px 20px;
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   gap: 20px;
+  width: 100%;
   & > * {
     flex: 1;
     border: 1px solid black;
@@ -69,6 +71,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     & > img {
       max-width: 25%;
     }
@@ -119,7 +122,6 @@ h2 {
   text-align: center;
 }
 .flex {
-  padding: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,6 +368,10 @@ header #BTN #header-btn:hover {
 main {
   max-width: 1080px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 30px 0;
 }
 
 #music1 {
@@ -474,4 +480,12 @@ i {
 
 #links p {
   font-size: 20px;
+}
+footer {
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(160, 160, 160);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
 }
