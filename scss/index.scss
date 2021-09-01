@@ -22,26 +22,24 @@ a {
 }
 
 .flex {
-  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  gap: 20px;
   width: 100%;
+  border: 1px solid black;
   & > * {
     flex: 1;
-    border: 1px solid black;
   }
 }
 
 #contactForm2 {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 40px;
-
+  gap: 20px;
+  padding: 30px 40px;
+  flex: 3;
   & > * {
-    padding: 5px 15px;
+    padding: 0px 15px;
   }
   :nth-child(1),
   :nth-child(2) {
@@ -51,19 +49,45 @@ a {
   :nth-child(4) {
     width: 100%;
   }
+  input,
+  textarea {
+    padding: 0;
+    transition: border 400ms ease-in-out;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    &:focus {
+      border-bottom: 1px solid rgba(0, 0, 0, 1);
+      outline: none;
+    }
+  }
+  input {
+    height: 50px;
+  }
+  textarea {
+    height: 200px;
+  }
   :nth-child(5) {
-    padding: 10px 30px;
-    font-weight: 700;
+    padding: 0px 100px;
+    font-weight: 600;
     display: block;
     margin: 0 auto;
+    font-size: 20px;
+    transition: all 300ms ease-in-out;
+    border-bottom: none;
+    background-color: rgb(230, 230, 230);
+    &:hover {
+      color: rgb(230, 230, 230);
+      background-color: black;
+    }
   }
 }
 
 #address {
+  background-color: rgb(92, 92, 92);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 40px;
+  padding: 60px 40px;
   a:hover {
     filter: contrast(50%);
   }
@@ -71,19 +95,22 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 40px;
     & > img {
-      max-width: 25%;
+      max-width: 50%;
+      border-radius: 35%;
     }
     & > * {
       flex: 1;
     }
     div {
       display: flex;
-      text-align: right;
       flex-direction: column;
       & > * {
-        color: blue;
+        color: white;
         display: block;
       }
     }
@@ -92,151 +119,19 @@ a {
 
 #soMe {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   justify-content: space-between;
   * {
     flex: 1;
     height: 30px;
-    gap: 15px;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
+    min-width: 100px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-:root {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-  font: inherit;
-}
-h2 {
-  text-align: center;
-}
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  gap: 20px;
-}
-.flex > * {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  border: 1px solid black;
-}
-#contactForm2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 40px;
-}
-#contactForm2 > * {
-  padding: 5px 15px;
-}
-#contactForm2 :first-child,
-#contactForm2 :nth-child(2) {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-#contactForm2 :nth-child(3),
-#contactForm2 :nth-child(4) {
-  width: 100%;
-}
-#contactForm2 :nth-child(5) {
-  padding: 10px 30px;
-  font-weight: 700;
-  display: block;
-  margin: 0 auto;
-}
-#address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 20px;
-  padding: 40px;
-}
-#address a:hover {
-  -webkit-filter: contrast(50%);
-  filter: contrast(50%);
-}
-#address #profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-#address #profile > img {
-  max-width: 25%;
-}
-#address #profile > * {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-#address #profile div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: right;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-#address #profile div > * {
-  color: blue;
-  display: block;
-}
-#soMe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-#soMe * {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  height: 30px;
-  gap: 15px;
-  text-align: center;
-  margin: 0 auto;
-}
+
 body {
   max-width: 100%;
   margin: auto;
@@ -481,6 +376,7 @@ i {
 #links p {
   font-size: 20px;
 }
+
 footer {
   width: 100%;
   padding: 30px;
