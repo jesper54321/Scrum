@@ -60,14 +60,15 @@ a {
       outline: none;
     }
   }
-  input {
+  input[type='text'],
+  input[type='email'] {
     height: 50px;
   }
   textarea {
     height: 200px;
   }
   :nth-child(5) {
-    padding: 0px 100px;
+    padding: 20px 100px;
     font-weight: 600;
     display: block;
     margin: 0 auto;
@@ -78,6 +79,7 @@ a {
     &:hover {
       color: rgb(230, 230, 230);
       background-color: black;
+      cursor: pointer;
     }
   }
 }

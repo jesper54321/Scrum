@@ -78,14 +78,15 @@ a {
   border-bottom: 1px solid black;
   outline: none;
 }
-#contactForm2 input {
+#contactForm2 input[type=text],
+#contactForm2 input[type=email] {
   height: 50px;
 }
 #contactForm2 textarea {
   height: 200px;
 }
 #contactForm2 :nth-child(5) {
-  padding: 0px 100px;
+  padding: 20px 100px;
   font-weight: 600;
   display: block;
   margin: 0 auto;
@@ -98,6 +99,7 @@ a {
 #contactForm2 :nth-child(5):hover {
   color: #e6e6e6;
   background-color: black;
+  cursor: pointer;
 }
 
 #address {
