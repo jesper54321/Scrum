@@ -84,7 +84,6 @@ a {
   }
 
   :nth-child(5) {
-
     background-color: #ccc;
     border: 3px solid #ccc;
     color: #666;
@@ -102,18 +101,13 @@ a {
     text-align: center;
 
     &:hover {
-
       background-color: #666;
       border: 3px solid #666;
       color: #ccc;
       border-radius: 2vw;
       -webkit-box-shadow: 5px 10px 15px #777;
       box-shadow: 5px 10px 15px #777;
-<<<<<<< HEAD
       cursor: pointer;
-=======
-
->>>>>>> main
     }
   }
 }
