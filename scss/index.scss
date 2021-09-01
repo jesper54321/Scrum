@@ -80,12 +80,14 @@ a {
   }
 
   :nth-child(5) {
+
     background-color: #ccc;
     border: 3px solid #ccc;
     color: #666;
     padding: 20px 30px;
     border-radius: 25%;
     text-decoration: none;
+
     display: block;
     -webkit-transition: 1s;
     transition: 1s;
@@ -96,12 +98,14 @@ a {
     text-align: center;
 
     &:hover {
+
       background-color: #666;
       border: 3px solid #666;
       color: #ccc;
       border-radius: 20%;
       -webkit-box-shadow: 5px 10px 15px #777;
       box-shadow: 5px 10px 15px #777;
+
     }
   }
 }
