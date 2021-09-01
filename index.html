@@ -1,71 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musik</title>
 
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <h2 id="contactForm">Message Us</h2>
-    <div class="flex">
-      <address id="address">
-        <div id="profile">
-          <img src="img/unnamed.png" alt="" />
-          <div>
-            <a href="tel:00000000">+45 00 00 00 00</a>
-            <a href="mailto:lorem@lorem.lorem">lorem@lorem.lorem</a>
-            <p>Denmark</p>
+    <header>
+      <h1>PROD.DEXT3R</h1>
+      <div id="BTN">
+        <a href="#" id="header-btn">Kontakt mig</a>
+      </div>
+    </header>
+    <main>
+      <section id="flex-box">
+        <div id="img">
+          <i id="icons" class="fab fa-freebsd"></i>
+        </div>
+
+        <div id="txt">
+          <h2 id="OM-MIG">Om mig</h2>
+          <p class="OM-MIG-P">
+            Hej med jer. Jeg er Prod.Dext3r og velkommen til denne hjemmeside
+            hvor i kan finde alt mit musik.
+          </p>
+          <p class="OM-MIG-P">
+            Jeg er en 17 årig dreng med interesse for musik.
+          </p>
+          <p class="OM-MIG-P">
+            i min hverdag går jeg på techcollege hvor jeg studere webudvikling.
+            Her fik min gruppe og jeg ideen til en onepage hvor man kan
+            promovere sit musik
+          </p>
+          <p class="OM-MIG-P">Håber i vil lytte til mit musik og følge med.</p>
+          <h2 id="OM-MIG-H2">Dext3r</h2>
+        </div>
+
+        <div id="Links">
+          <p class="txt2"><b>BEATSTARS</b></p>
+          <a href="https://www.beatstars.com/proddext3r/feed" target="_blank">
+            <i class="fas fa-music" id="music1"></i>
+          </a>
+          <p class="txt2"><b>SOUNDCLOUD</b></p>
+          <a href="https://soundcloud.com/proddext3r" target="_blank">
+            <i class="fab fa-soundcloud" id="music2"></i>
+          </a>
+          <p class="txt2"><b>YOUTUBE</b></p>
+          <a
+            href="https://www.youtube.com/channel/UC5EztfOWszQH8gAZ7R3eh4Q"
+            target="_blank"
+          >
+            <i class="fab fa-youtube" id="music3"></i>
+          </a>
+        </div>
+      </section>
+      <section id="galleryText">
+        <article>
+          <h2>Prod.Dext3r Cover Art</h2>
+          <p>
+            Jeg er 17 år. Er P.T igang med og uddanne mig som webudvikler. I min
+            fritid laver jeg musik under kunstnernavnet "Prod Dext3r" - fordi
+            jeg rigtig godt kan lide Dexters Laboratorium. Her i galleriet kan i
+            se nogle forskellige cover arts som jeg bruger til min musik. God
+            fornøjelse!
+          </p>
+        </article>
+      </section>
+
+      <div>
+        <a
+          href="https://www.youtube.com/channel/UC5EztfOWszQH8gAZ7R3eh4Q"
+          target="_blank"
+        >
+          <div id="gallery">
+            <img id="image1" src="/img/baby jesus.png" alt="party" />
+            <img id="image2" src="/img/BOSS TALK.png" alt="boss talk" />
+            <img id="image3" src="/img/branco.png" alt="bad" />
+            <img
+              id="image4"
+              src="/img/cover art copy paste.png"
+              alt="in my mind"
+            />
+            <img id="image5" src="/img/drilla.png" alt="up nxt" />
+            <img id="image6" src="/img/jaden.png" alt="vibes" />
+            <img id="image7" src="/img/kulturen 2k21.png" alt="kultur 2k21" />
+            <img id="image8" src="/img/miklo.png" alt="yuri boika" />
+            <img id="image9" src="/img/MUF10.png" alt="mufi0" />
+            <img id="image10" src="/img/Rueco.png" alt="devil" />
+            <img id="image11" src="/img/TJ mani.png" alt="demon" />
+            <img id="image12" src="/img/TJ.png" alt="henny" />
           </div>
-        </div>
-        <div id="soMe">
-          <a href="https://soundcloud.com/">
-            <img src="img/Soundcloud_logo.svg" alt="" />
-          </a>
-          <a href="https://www.youtube.com/">
-            <img src="img/YouTube_Logo_2017.svg" alt="" />
-          </a>
-          <a href="https://da-dk.facebook.com/">
-            <img src="img/Facebook_f_logo_(2019).svg" alt="" />
-          </a>
-          <a href="https://twitter.com/?lang=da">
-            <img src="img/icons8-twitter.svg" alt="" />
-          </a>
-        </div>
-      </address>
-      <form id="contactForm2" action="" method="get">
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Name..."
-          required
-        />
-        <input
-          type="text"
-          name="last-name"
-          id="last-name"
-          placeholder="Last name..."
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email..."
-          required
-        />
-        <textarea
-          required
-          name="formMessage"
-          id="formMessage"
-          placeholder="Input your message here!"
-        ></textarea>
-        <input type="submit" value="Submit" id="submitBtn" />
-      </form>
-    </div>
+        </a>
+      </div>
+
+      <h2 id="contactForm">Message Us</h2>
+      <div class="flex">
+        <address id="address">
+          <div id="profile">
+            <img src="img/unnamed.png" alt="" />
+            <div>
+              <a href="tel:00000000">+45 00 00 00 00</a>
+              <a href="mailto:lorem@lorem.lorem">lorem@lorem.lorem</a>
+              <p>Denmark</p>
+            </div>
+          </div>
+          <div id="soMe">
+            <a href="https://soundcloud.com/">
+              <img src="img/Soundcloud_logo.svg" alt="" />
+            </a>
+            <a href="https://www.youtube.com/">
+              <img src="img/YouTube_Logo_2017.svg" alt="" />
+            </a>
+            <a href="https://da-dk.facebook.com/">
+              <img src="img/Facebook_f_logo_(2019).svg" alt="" />
+            </a>
+            <a href="https://twitter.com/?lang=da">
+              <img src="img/icons8-twitter.svg" alt="" />
+            </a>
+          </div>
+        </address>
+        <form id="contactForm2" action="" method="get">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name..."
+            required
+          />
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Last name..."
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email..."
+            required
+          />
+          <textarea
+            required
+            name="formMessage"
+            id="formMessage"
+            placeholder="Input your message here!"
+          ></textarea>
+          <input type="submit" value="Submit" id="submitBtn" />
+        </form>
+      </div>
+    </main>
+
+    <footer></footer>
     <script src="js/index.js"></script>
   </body>
 </html>
