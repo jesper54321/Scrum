@@ -336,6 +336,7 @@ main {
   opacity: 0.6;
   color: black;
   font-size: 100px;
+  transition-delay: 2s;
   -webkit-animation: fade-in_2 2s ease;
           animation: fade-in_2 2s ease;
 }
@@ -344,6 +345,7 @@ main {
   opacity: 0.6;
   color: orange;
   font-size: 100px;
+  transition-delay: 2s;
   -webkit-animation: fade-in_2 2s ease;
           animation: fade-in_2 2s ease;
 }
@@ -352,6 +354,7 @@ main {
   opacity: 0.6;
   color: red;
   font-size: 100px;
+  transition-delay: 2s;
   -webkit-animation: fade-in_2 2s ease;
           animation: fade-in_2 2s ease;
 }
