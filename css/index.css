@@ -247,6 +247,7 @@ body {
   width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  transition-delay: 4s;
   opacity: 100%;
 }
 
@@ -314,7 +315,7 @@ header #BTN #header-btn:hover {
   border: 3px solid #666;
   color: #ccc;
   border-radius: 20%;
-  -webkit-box-shadow: 5px 10px 15px #777;
+  -webkit-box-shadow: 5px 10px 15px #777; 
   box-shadow: 5px 10px 15px #777;
 }
 main {
