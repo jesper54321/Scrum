@@ -6,6 +6,290 @@
           box-sizing: border-box;
 }
 
+/* HEADER */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+header {
+  background-image: url(../img/pexels-snapwire-6966.jpg);
+  background-size: cover;
+  height: 100vh;
+  max-width: 1920px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+header h1 {
+  font-size: 90px;
+  padding-top: 20%;
+  padding-bottom: 60px;
+  text-align: center;
+  color: white;
+}
+
+header #BTN {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header #BTN #header-btn {
+  background-color: #ccc;
+  border: 3px solid #ccc;
+  color: #666;
+  padding: 20px 10px;
+  border-radius: 4%;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 10%;
+}
+
+header #BTN #header-btn:hover {
+  background-color: #666;
+  border: 3px solid #666;
+  color: #ccc;
+  border-radius: 20%;
+  -webkit-box-shadow: 5px 10px 15px #777; 
+  box-shadow: 5px 10px 15px #777;
+}
+
+/* HEADER SLUT */
+
+
+
+/* OM MIG */
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  padding: 30px 0;
+}
+
+#music1 {
+  opacity: 0.6;
+  color: black;
+  font-size: 100px;
+  transition-delay: 2s;
+  -webkit-animation: fade-in_2 2s ease;
+          animation: fade-in_2 2s ease;
+}
+
+#music2 {
+  opacity: 0.6;
+  color: orange;
+  font-size: 100px;
+  transition-delay: 2s;
+  -webkit-animation: fade-in_2 2s ease;
+          animation: fade-in_2 2s ease;
+}
+
+#music3 {
+  opacity: 0.6;
+  color: red;
+  font-size: 100px;
+  transition-delay: 2s;
+  -webkit-animation: fade-in_2 2s ease;
+          animation: fade-in_2 2s ease;
+}
+
+#music1:hover {
+  opacity: 1;
+  color: black;
+  font-size: 100px;
+}
+
+#music2:hover {
+  opacity: 1;
+  color: orange;
+  font-size: 100px;
+}
+
+#music3:hover {
+  opacity: 1;
+  color: red;
+  font-size: 100px;
+}
+
+.txt2 {
+  animation: fade-in_2 2s ease;
+}
+
+@keyframes fade-in_2 {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translateX(0);
+  }
+}
+
+#icons {
+  padding-top: 110px;
+  font-size: 150px;
+  padding-bottom: 10px;
+  text-align: center;
+  -webkit-animation: fade-in 2s ease;
+          animation: fade-in 2s ease;
+  -webkit-filter: drop-shadow(8px 2px 1px rgba(92, 75, 75, 0.507));
+          filter: drop-shadow(8px 2px 1px rgba(92, 75, 75, 0.507));
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#txt {
+  padding-top: 100px;
+  max-width: 800px;
+}
+
+.OM-MIG-P {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+#OM-MIG-H2 {
+  font-size: 25px;
+}
+
+#flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Links {
+  max-width: 40px;
+}
+
+i {
+  padding-bottom: 40px;
+}
+
+#Links p {
+  font-size: 20px;
+}
+/* OM MIG - SLUT */
+
+
+
+/* GALLERY START - DON'T TOUCH IT PLEASE XD */
+body {
+  max-width: 100%;
+  margin: auto;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* TEXT */
+#galleryText h2 {
+  font-size: 4em;
+  margin: 0;
+  text-align: center;
+}
+
+#galleryText p {
+  font-size: 1.5em;
+  margin: 10px;
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+/* GALLERY */
+#gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 7px auto 7px auto;
+  grid-template-columns: auto auto auto;
+  gap: 7px;
+}
+
+#gallery img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 100%;
+}
+
+#gallery img:hover {
+  transform: scale(1.02);
+  border-radius: 5%;
+  opacity: 80%;
+}
+
+.left {
+  animation: slide 2s ease-in-out;
+  animation-delay: 2s;
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.right {
+    animation: slide2 2s ease-in-out;
+    animation-delay: 2s;
+}
+@keyframes slide2 {
+  from {
+    opacity: 0;
+            transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+            transform: translateX(0px);
+  }
+}
+/* GALLERY END */
+
+
+
+/* KONTAKT FORMULAR */
+
 :root {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -214,304 +498,7 @@ a {
   margin: 10px auto;
   min-width: 100px;
 }
-
-/* GALLERY START - DON'T TOUCH IT PLEASE XD */
-body {
-  max-width: 100%;
-  margin: auto;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-/* TEXT */
-#galleryText h2 {
-  font-size: 4em;
-  margin: 0;
-  text-align: center;
-}
-
-#galleryText p {
-  font-size: 1.5em;
-  margin: 10px;
-  text-align: center;
-  padding-left: 80px;
-  padding-right: 80px;
-}
-
-/* GALLERY */
-#gallery {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 7px auto 7px auto;
-  grid-template-columns: auto auto auto;
-  gap: 7px;
-}
-
-#gallery img {
-  width: 100%;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  opacity: 100%;
-}
-
-#gallery img:hover {
-  transform: scale(1.02);
-  border-radius: 5%;
-  opacity: 80%;
-}
-
-.left {
-  animation: slide 2s ease-in-out;
-}
-@keyframes slide {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.right {
-    animation: slide2 2s ease-in-out;
-}
-@keyframes slide2 {
-  from {
-    opacity: 0;
-            transform: translateX(20px);
-  }
-  to {
-    opacity: 1;
-            transform: translateX(0px);
-  }
-}
-/* GALLERY END */
-
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-header {
-  background-image: url(../img/pexels-snapwire-6966.jpg);
-  background-size: cover;
-  height: 100vh;
-  max-width: 1920px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  justify-items: center;
-}
-
-header h1 {
-  font-size: 90px;
-  padding-top: 20%;
-  padding-bottom: 60px;
-  text-align: center;
-  color: white;
-}
-
-header #BTN {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header #BTN #header-btn {
-  background-color: #ccc;
-  border: 3px solid #ccc;
-  color: #666;
-  padding: 20px 10px;
-  border-radius: 4%;
-  text-decoration: none;
-  display: block;
-  -webkit-transition: 1s;
-  transition: 1s;
-  border-radius: 10%;
-}
-
-header #BTN #header-btn:hover {
-  background-color: #666;
-  border: 3px solid #666;
-  color: #ccc;
-  border-radius: 20%;
-  -webkit-box-shadow: 5px 10px 15px #777; 
-  box-shadow: 5px 10px 15px #777;
-}
-main {
-  max-width: 1080px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 50px;
-  padding: 30px 0;
-}
-
-#music1 {
-  opacity: 0.6;
-  color: black;
-  font-size: 100px;
-  transition-delay: 2s;
-  -webkit-animation: fade-in_2 2s ease;
-          animation: fade-in_2 2s ease;
-}
-
-#music2 {
-  opacity: 0.6;
-  color: orange;
-  font-size: 100px;
-  transition-delay: 2s;
-  -webkit-animation: fade-in_2 2s ease;
-          animation: fade-in_2 2s ease;
-}
-
-#music3 {
-  opacity: 0.6;
-  color: red;
-  font-size: 100px;
-  transition-delay: 2s;
-  -webkit-animation: fade-in_2 2s ease;
-          animation: fade-in_2 2s ease;
-}
-
-#music1:hover {
-  opacity: 1;
-  color: black;
-  font-size: 100px;
-}
-
-#music2:hover {
-  opacity: 1;
-  color: orange;
-  font-size: 100px;
-}
-
-#music3:hover {
-  opacity: 1;
-  color: red;
-  font-size: 100px;
-}
-
-.txt2 {
-  -webkit-animation: fade-in_2 2s ease;
-          animation: fade-in_2 2s ease;
-}
-
-@-webkit-keyframes fade-in_2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
-  }
-  100% {
-    opacity: 0.6;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes fade-in_2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
-  }
-  100% {
-    opacity: 0.6;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-#icons {
-  padding-top: 110px;
-  font-size: 150px;
-  padding-bottom: 10px;
-  text-align: center;
-  -webkit-animation: fade-in 2s ease;
-          animation: fade-in 2s ease;
-  -webkit-filter: drop-shadow(8px 2px 1px rgba(92, 75, 75, 0.507));
-          filter: drop-shadow(8px 2px 1px rgba(92, 75, 75, 0.507));
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-#txt {
-  padding-top: 100px;
-  max-width: 800px;
-}
-
-.OM-MIG-P {
-  font-size: 18px;
-}
-
-h2 {
-  font-size: 35px;
-}
-
-#OM-MIG-H2 {
-  font-size: 25px;
-}
-
-#flex-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#Links {
-  max-width: 40px;
-}
-
-i {
-  padding-bottom: 40px;
-}
-
-#links p {
-  font-size: 20px;
-}
+/* KONTAKTFORMULAR SLUT */
 
 footer {
   width: 100%;
